@@ -37,7 +37,7 @@ class StudentMarksheet {
         float total = marks1 + marks2 + marks3 + marks4 + marks5 + marks6;
         float average = total / 6;
 
-        System.out.println("--- Marksheet ---");
+        System.out.println("====== Marksheet =====");
         System.out.println("Name: " + name);
         System.out.println("Roll Number: " + rollNumber);
         System.out.println("Marks: ");
