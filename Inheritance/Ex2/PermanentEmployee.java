@@ -11,10 +11,7 @@ class PermanentEmployee extends Employee {
             sc.nextLine();
             System.out.println("Enter Grade: ");
             grade = sc.nextLine();
-                    // System.out.print("Enter Allowance: ");
-            // allowance = sc.nextDouble();
-            // System.out.print("Enter PF Deduction: ");
-            // pf = sc.nextDouble();
+            
         }
     
         double calculateHRA() {
