@@ -35,8 +35,8 @@ class HappyUnhappyNumber extends FibonacciSeries {
         
         obj.displayDiamond(5);
         
-        obj.printFibonacci(10);
+        obj.printFibonacci(13);
         
-        obj.checkHappyOrUnhappy(19);
+        obj.checkHappyOrUnhappy(4);
     }
 }
