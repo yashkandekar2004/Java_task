@@ -5,18 +5,13 @@ public class Employee {
     private int hoursWorked;
     private double hourlyRate;
 
-   
-
     public void setName(String name) {
         this.name = name;
     }
 
-
     public void setHoursWorked(int hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
-
-   
 
     public void setHourlyRate(double hourlyRate) {
         this.hourlyRate = hourlyRate;

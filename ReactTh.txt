@@ -1,0 +1,110 @@
+🧠 UseState :- 
+	👉 it is used to create an updates the Variable inside a component.
+                  👉   when state chnage then component re render automatically 
+                    👉  in this two things  :- current value and function to update it 
+
+
+🧠 useEffect (for side effects):- 
+			👉 it runs code after the component renders or updates.
+			👉 Mainly used for API calls, timers, event listeners.
+			👉 It depends on a dependency array to control when it runs.
+
+
+🧠 What are Props?
+	Props = Data passed from one component to another.
+	They make components dynamic and reusable.
+	Props are read-only (you can't change them inside the child).
+
+
+🧠 Props Drilling (very simple)
+	👉 Passing props through many components.
+	👉 Middle components don't use it, just pass it.
+	👉Makes code messy.
+
+🔥 Props Drilling (Simplest)
+	Passing data from top to bottom through many components.
+	Even if middle components don't use the data.
+	It's like handing over something again and again until it reaches the last person.
+
+
+
+🧠  Context API
+	👉 A way to share data globally without passing props manually.
+	👉 Solves the problem of props drilling.
+	👉 Uses createContext, Provider, and useContext to access shared data.
+
+🧠 What is Context API?
+	Context API is a way to share data directly to any component — no need for props drilling.
+	It gives a global data store for your app.
+	Components can get the data from context anywhere.
+
+
+
+
+🧠 What is useDispatch?
+	👉 useDispatch is a React-Redux hook.
+	👉 It is used to send actions to the Redux store.
+	👉 Actions are used to update the state.
+
+🧠 What is useSelector?
+	👉 useSelector is a React-Redux hook.
+	👉 It is used to get data from the Redux store into your component.
+	👉 It reads the state (does NOT change it).
+
+
+
+
+
+
+
+
+
+
+
+🖥️ What is Component Rendering?
+	👉 Component rendering means showing the component's UI on the screen.
+	👉 It happens when the app loads, or when the state/props change.
+	👉 React decides what to display by re-rendering components.
+
+📦 Very Simple Points:
+	Render = Display the component on the page.
+	Happens first time and after changes (state/props update).
+	React uses a virtual DOM to make rendering fast and smart.
+
+
+
+
+
+
+
+📦 Very Simple Points:
+1. Mounting (Creation)
+	The component appears on the screen for the first time.
+	Example: useEffect(() => {}, [])
+
+2. Updating (Changes)
+	The component changes because of state/props update.
+	Example: useEffect(() => { ... }, [someState])
+
+3. Unmounting (Removal)
+	The component is removed from the screen.
+	Example: useEffect(() => { return () => { ... }; }, [])
+
+✅ Tiny Diagram:
+
+	Mount ➔ Update ➔ Unmount
+	(Create)  (Change)   (Remomve)
+In short:
+	React Lifecycle = Birth ➔ Life ➔ Death of a component.
+s
+
+
+
+📦 What is Default Export?
+	You can export only one thing as default from a file.
+	When you import, you can give any name you want.
+
+
+📦 What is Named Export?
+	You can export many things using their real names.
+	When you import, you must use the same name inside {}.
